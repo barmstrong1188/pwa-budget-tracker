@@ -1,3 +1,9 @@
+const indexedDB =
+  window.indexedDB ||
+  window.mozIndexedDB ||
+  window.webkitIndexedDB ||
+  window.msIndexedDB ||
+  window.shimIndexedDB;
 //create a variable to hold db connection
 let db;
 //establish a connection to IndexedDB database called 'budget' and set it to version 1
